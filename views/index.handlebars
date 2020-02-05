@@ -1,8 +1,48 @@
 <html>
 <head>
-	<title>Test Page</title>
+	<title>Course Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/CoursePage.css" rel="stylesheet">
 </head>
 <body>
-Begin here (or replace this with any static code already written).
+<div class="container">
+		<div class="navbar-default">
+			<div class="dropdown" style="float: left">
+  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="float: left">
+ 					 <span class="caret"></span>
+				</button>
+  				<ul class="dropdown-menu">
+    				<li><a href="../">COGS 120</a></li>
+    				<li><a href="../">CSE 170</a></li>
+    				<li><a href="../">COGS 107B</a></li>
+ 				</ul>
+			</div>
+
+			<h1>Course Page</h1>
+		</div>
+		
+		<br>
+
+		<h2>My Groups</h2>
+
+		{{#each Groups}}
+		<a id="group"  href="../groupPage" class="thumbnail">
+			<img src="{{imageURL}}" alt="GroupImage" class="img-responsive img-rounded">
+			<h4>{{name}}</h4>
+		</a>
+		{{/each}}
+
+
+		<button id="findTeammates" class="btn btn-primary btn-md" style="float: right">+</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/teamUp.js"></script>
+
+
 </body>
 </html>

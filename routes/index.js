@@ -3,6 +3,9 @@
  * GET home page.
  */
 
+var group = require('../Groups.json');
+
 exports.view = function(req, res){
-  res.render('index');
+  console.log(group);
+  res.render('index', group);
 };

@@ -1,0 +1,10 @@
+.hamburger {
+    width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+h1, h2, h4 {
+    text-align: center;
+}
